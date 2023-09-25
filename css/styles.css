@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', 
+        sans-serif;
+    min-height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text-card {
+    text-align: center;
+    padding: 7%;
+}
+
+.text-card h2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.text-card p {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 25px;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan a {
+    font-weight: 600;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan-img {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan-details {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.plan-details h4 {
+    font-size: 15px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-details p {
+    font-size: 14px;
+}
+
+.btn-procced {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+    border-radius: 14px;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+.btn-procced:hover {
+    background-color: hsl(245, 50%, 68%);
+}
+
+.btn-cancel {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 800;
+}
+
+.btn-cancel:hover {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 425px){
+
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .card {
+        max-width: 85%;
+    }
+
+    .text-card {
+        font-size: 22px;
+    }
+
+    .plan {
+        padding: 12px;
+    }
+
+    .plan a {
+        font-size: 12px;
+    }
+
+    .btn-procced {
+        font-size: 14px;
+    }
+
+    .btn-cancel {
+        font-size: 14px;
+    }
+
+    .text-card p {
+        font-size: 14px;
+    }
+
+    .text-card h2 {
+        font-size: 16px;
+    }
+
+    .plan-img {
+        width: 50%;
+    }
+}
